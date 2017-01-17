@@ -1,0 +1,175 @@
+/* vim: set ai sw=4 ts=4 fdm=marker: */
+
+/* Font definitions {{{ */
+@font-face {
+    font-family: archivo;
+    src: url(/css/fonts/archivo.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+/* }}} */
+
+/* Main blocks style {{{ */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    width:90%;
+    max-width:720px;
+    margin:auto;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    max-width: 720px;
+    border-top:1px solid #aaa;
+    padding: 10px;
+}
+
+#blank {
+    height: 100%;
+    padding:10px;
+}
+/* }}} */
+
+/* Titles and headers {{{ */
+h1, h3 {
+    font-family: archivo, sans-serif;
+}
+
+h1, h2 {
+    display: inline-block;
+}
+
+h2 {
+    font-weight: normal;
+    color: #666;
+    font-size: 100%;
+}
+/* }}} */
+
+/* Pretty links {{{ */
+a {
+    color: #333;
+    text-decoration: none;
+    font-style: italic;
+    border-bottom: 1px dotted grey;
+}
+
+a:hover {
+    color: #755;
+}
+
+h1 a, h2 a, h3 a {
+    font-style: normal;
+}
+
+header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+header h1 a {
+    color: #fff;
+    border: none;
+    text-shadow: 0px 0px 8px black;
+}
+header h1 a:hover {
+    color: #fff;
+    text-shadow: 0px 0px 8px #755;
+}
+/* }}} */
+
+/* Coding style (<code>) {{{ */
+pre {
+    color: #eee;
+    font-family: monospace;
+    font-size: 90%;
+    background-color: #333;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+pre code {
+    padding: 0;
+    border: none;
+}
+/* }}} */
+
+/* Text Formatting {{{ */
+blockquote, q {
+    color: #666;
+    font-style: italic;
+}
+
+blockquote {
+    border-left: 8px solid #aaa;
+    padding-left: 8px;
+    margin-left: -8px;
+}
+
+.strike { text-decoration: line-through; }
+
+/* }}} */
+
+/* Images and associated text {{{ */
+
+img {
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    margin:auto;
+    max-width: 100%;
+}
+
+video { width: 100%; }
+
+/* Comment images - use with <span> or <div> */
+.caption {
+    display: block;
+    font-style: italic;
+    margin: auto;
+    text-align: center;
+}
+/* }}} */
+
+/* Homepage specific */
+#intro {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.item-picture {
+    flex: 0 0 80px;
+}
+.item-text {
+    flex: 1 1 0;
+    padding-left: 25px;
+}
+#intro p {
+    margin: 0;
+}
+
+@media (max-width: 720px) {
+  .item-text {
+    flex: 0 0 100%;
+    padding-left: 0;
+  }
+  .item-picture {
+    flex: 0 0 120px;
+    margin-bottom: 12px;
+  }
+  #intro {
+    justify-content: center;
+  }
+}
+/* }}} */
