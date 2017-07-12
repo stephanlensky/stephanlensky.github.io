@@ -16,7 +16,7 @@ def move(speed, steering_angle, duration):
     msg.drive.steering_angle = steering_angle
     
     # pretty sure this is what the frame_id should be?
-    # probably doesn't really matter anyway
+    # probably doesn't really matter, don't think it's used for anything
     msg.header.frame_id = '/base_link'
     
     # continue publishing our move message until either the robot shuts down or the timer runs out
