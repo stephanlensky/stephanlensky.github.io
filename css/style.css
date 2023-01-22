@@ -147,6 +147,7 @@ video { width: 100%; }
 }
 #intro {
     margin-top: -5px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     flex-flow: row;
@@ -176,6 +177,7 @@ video { width: 100%; }
   }
   #intro {
     justify-content: center;
+    margin-bottom: 0px;
   }
 }
 /* }}} */
