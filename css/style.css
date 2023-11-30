@@ -149,7 +149,7 @@ video { width: 100%; }
     margin-top: -5px;
     margin-bottom: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row;
     flex-wrap: wrap;
 }
@@ -159,7 +159,7 @@ video { width: 100%; }
 .item-text {
     flex: 1 1 0;
     padding-left: 17px;
-    padding-top: 14px;
+    padding-top: 8px;
 }
 #intro p {
     margin: 0;
