@@ -77,6 +77,28 @@ main {
   text-wrap: balance;
 }
 
+.intro {
+  max-width: 728px;
+  margin: 24px auto 0;
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.7;
+  text-wrap: pretty;
+  color: var(--foreground);
+}
+
+.intro a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: rgba(236, 233, 226, 0.35);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.intro a:hover {
+  text-decoration-color: var(--foreground);
+}
+
 .title-end {
   white-space: nowrap;
 }
@@ -607,6 +629,15 @@ main {
   pointer-events: none;
 }
 
+.view-note {
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--muted-foreground);
+}
+
 @media (max-width: 640px) {
   :root {
     --screen-width: 0.9;
@@ -637,7 +668,7 @@ main {
 
 .article {
   width: min(100%, 728px);
-  margin-top: clamp(72px, 12vh, 128px);
+  margin-top: clamp(48px, 9vh, 96px);
   font-size: 17px;
   line-height: 1.7;
   color: var(--muted-foreground);
