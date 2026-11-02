@@ -99,6 +99,20 @@ main {
   text-decoration-color: var(--foreground);
 }
 
+.warning {
+  max-width: 728px;
+  margin: 20px auto 0;
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.7;
+  text-wrap: pretty;
+  color: var(--foreground);
+}
+
+.warning strong {
+  font-weight: 600;
+}
+
 .title-end {
   white-space: nowrap;
 }
